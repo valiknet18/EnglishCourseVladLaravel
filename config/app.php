@@ -155,7 +155,9 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
+        Jenssegers\Mongodb\MongodbServiceProvider::class,
+        
     ],
 
     /*
