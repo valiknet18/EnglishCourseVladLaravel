@@ -1,9 +1,10 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
+use Jenssegers\Mongodb\Schema\Blueprint;
 
-class CreateUsersTable extends Migration
+class CreateGroupsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->unique('email');
-            $table->rememberToken();
+        Schema::create('groups', function (Blueprint $table) {
         });
     }
 
@@ -25,6 +24,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        //
     }
 }
