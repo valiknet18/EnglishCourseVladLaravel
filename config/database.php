@@ -94,6 +94,7 @@ return [
             'passport' => env('DB_PASSWORD', ''),
             'options' => [
                 'db'  =>  env('DB_DATABASE_2', ''),
+                'authMode' => 'scram-sha1',
             ]
         ]
     ],
