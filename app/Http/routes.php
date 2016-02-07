@@ -27,5 +27,13 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::group(['prefix' => 'auth', 'middleware' => 'guest'], function () {
+        Route::get('/login', 'Admin\HomeController@loginAction');
+        Route::post('/authenticate', 'Admin\HomeController@authenticateAction');
+    });
+
+    Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
+        Route::get('/dashboard', 'Admin\HomeController@dashboardAction');
+    });
 });
+
