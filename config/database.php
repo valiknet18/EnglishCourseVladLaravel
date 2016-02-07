@@ -93,6 +93,7 @@ return [
             'username'  =>  env('DB_USERNAME', ''),
             'passport' => env('DB_PASSWORD', ''),
             'options' => [
+                'role' => 'read',
                 'db'  =>  env('DB_DATABASE', ''),
             ]
         ]
