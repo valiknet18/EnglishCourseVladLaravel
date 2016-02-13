@@ -279,7 +279,7 @@
                         <!-- /input-group -->
                     </li>
                     <li>
-                        <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="{{ action('Admin\HomeController@dashboardAction') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="{{ action('Admin\CoursesController@indexAction') }}"><i class="fa fa-dashboard fa-fw"></i> Курсы</a>

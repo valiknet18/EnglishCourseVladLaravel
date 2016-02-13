@@ -14,6 +14,9 @@
                     <div class="row">
                         <p>Название курса: {{ $course->name }}</p>
                         <p>Описание курса: {{ $course->description }}</p>
+                        <div>
+                            <img src="{{ $course->image }}" />
+                        </div>
                     </div>
                 </div>
             </div>
