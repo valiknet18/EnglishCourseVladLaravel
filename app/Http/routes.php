@@ -34,6 +34,13 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/dashboard', 'Admin\HomeController@dashboardAction');
+
+        Route::group(['prefix' => 'courses'], function () {
+            Route::get('/', 'Admin\CoursesController@indexAction');
+            Route::get('/create', 'Admin\CoursesController@createAction');
+            Route::post('/create', 'Admin\CoursesController@storeAction');
+            Route::get('/{course}', 'Admin\CoursesController@itemAction');
+        });
     });
 });
 

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -283,7 +282,7 @@
                         <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-dashboard fa-fw"></i> Курсы</a>
+                        <a href="{{ action('Admin\CoursesController@indexAction') }}"><i class="fa fa-dashboard fa-fw"></i> Курсы</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-dashboard fa-fw"></i> Пользователи</a>

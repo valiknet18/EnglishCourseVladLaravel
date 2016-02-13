@@ -157,7 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
         Jenssegers\Mongodb\MongodbServiceProvider::class,
-        
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
     ],
 
     /*
