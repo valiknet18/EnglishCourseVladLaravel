@@ -33,7 +33,7 @@ Route::group(['middleware' => ['web']], function () {
     });
 
     Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
-        Route::get('/dashboard', 'Admin\HomeController@dashboardAction');
+        Route::get('/', 'Admin\HomeController@dashboardAction');
 
         Route::group(['prefix' => 'courses'], function () {
             Route::get('/', 'Admin\CoursesController@indexAction');
